@@ -1,7 +1,7 @@
 public class SubstringSingleStrip {
     public static void main(String[] args) {
         String main_string = "abcdefghijklmnopqrstuvwxyz";
-        String sub_string = "abcd";
+        String sub_string = "aceg";
 
         int check = checkSubString(main_string, sub_string);
         
@@ -28,7 +28,7 @@ public class SubstringSingleStrip {
                 for(j = 0;j<sub.length();j++){
                 
                     
-                    if(main.charAt(i+j)!=sub.charAt(j)){
+                    if(main.charAt(i+(j*2))!=sub.charAt(j)){
                         flag1 = false;
                         break;
                     }
