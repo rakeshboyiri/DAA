@@ -20,7 +20,7 @@ public class Substring {
         int n = sub.length(); //Length od sub string 
         int index =-1;
         
-        for(i=0;i<m-n;i++){ //outer loop runs m-n times
+        for(i=0;i<=m-n;i++){ //outer loop runs m-n times
             
             if(main.charAt(i)==sub.charAt(0)){
                 boolean flag1 = true;
